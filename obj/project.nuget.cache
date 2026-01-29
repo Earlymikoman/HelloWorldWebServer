@@ -1,8 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "dr6ONbGcdGizz7wV4U8LLeM2bh0h+o87NKiHpaaN0kwDw2qQYWCiRKO0hdKQi85TEEbp2IOOm2HPBJEcjRCLtQ==",
+  "dgSpecHash": "eCwMo6X3J31gv9OB30A+gciPgQyfW9NFk28KF8DVywOVWqYEpVfrSLc1IlxdBBkQKeOIWz3j2kfiKP1gKZzecA==",
   "success": true,
   "projectFilePath": "/home/earlymikoman/HelloWorld/HelloWorldWebServer/HelloWorldWebServer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.diagnostics.abstractions/8.0.0/microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.hosting.abstractions/8.0.0/microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.logging.configuration/8.0.0/microsoft.extensions.logging.configuration.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.options.configurationextensions/8.0.0/microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/opentelemetry/1.15.0/opentelemetry.1.15.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/opentelemetry.api/1.15.0/opentelemetry.api.1.15.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/opentelemetry.api.providerbuilderextensions/1.15.0/opentelemetry.api.providerbuilderextensions.1.15.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/opentelemetry.exporter.console/1.15.0/opentelemetry.exporter.console.1.15.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/opentelemetry.extensions.hosting/1.15.0/opentelemetry.extensions.hosting.1.15.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/opentelemetry.instrumentation.aspnetcore/1.15.0/opentelemetry.instrumentation.aspnetcore.1.15.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/system.diagnostics.diagnosticsource/10.0.0/system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
