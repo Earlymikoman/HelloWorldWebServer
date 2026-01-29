@@ -12,14 +12,17 @@ class Program
     private static async Task DefaultDelegate(HttpContext context)
     {
         await context.Response.WriteAsync("Homepage + Did the change go through?");
+        Console.WriteLine("Default Visited");
     }
     private static async Task HelloWorldDelegate(HttpContext context)
     {
+        Console.WriteLine("Hello Called");
         await context.Response.WriteAsync("Hello World!");
     }
 
     private static async Task GoodbyeWorldDelegate(HttpContext context)
     {
+        Console.WriteLine("Goodbye Called");
         await context.Response.WriteAsync("Goodbye World!");
     }
 
