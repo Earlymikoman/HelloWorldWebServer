@@ -8,6 +8,10 @@ using Microsoft.VisualBasic;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 
+using CS397.Trace;
+using CS397.Internal;
+using CS397.Exporter;
+
 class Program
 {
     const string serviceName = "monitored-docker-web-service";
@@ -54,7 +58,7 @@ class Program
                     )
                 )
                 .AddAspNetCoreInstrumentation()
-                .AddConsoleExporter();
+                .AddJsonConsoleExporter();
             }
         );
 

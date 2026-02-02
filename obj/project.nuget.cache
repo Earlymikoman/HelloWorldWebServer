@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eCwMo6X3J31gv9OB30A+gciPgQyfW9NFk28KF8DVywOVWqYEpVfrSLc1IlxdBBkQKeOIWz3j2kfiKP1gKZzecA==",
+  "dgSpecHash": "ke6q5HOkPecRdtxlgP3N1ykJcYrukc+HVrttmk2UkdY8niZWzJx9fIG4vv4Vs4p5JusWCwwPtjSTvDbfBD3mCQ==",
   "success": true,
   "projectFilePath": "/home/earlymikoman/HelloWorld/HelloWorldWebServer/HelloWorldWebServer.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "/home/earlymikoman/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
     "/home/earlymikoman/.nuget/packages/microsoft.extensions.options.configurationextensions/8.0.0/microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "/home/earlymikoman/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/home/earlymikoman/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512",
     "/home/earlymikoman/.nuget/packages/opentelemetry/1.15.0/opentelemetry.1.15.0.nupkg.sha512",
     "/home/earlymikoman/.nuget/packages/opentelemetry.api/1.15.0/opentelemetry.api.1.15.0.nupkg.sha512",
     "/home/earlymikoman/.nuget/packages/opentelemetry.api.providerbuilderextensions/1.15.0/opentelemetry.api.providerbuilderextensions.1.15.0.nupkg.sha512",
