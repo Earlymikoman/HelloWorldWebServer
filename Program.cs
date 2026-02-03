@@ -26,16 +26,82 @@ class Program
 
     private async Task DefaultDelegate(HttpContext context)
     {
-        await context.Response.WriteAsync("Homepage + Did the change go through?");
+        TelemetrySpan currentSpan = _tracer.StartSpan("DefaultDelegate");
+        currentSpan.SetAttribute("http.method", context.Request.Method);
+        currentSpan.SetAttribute("http.url", context.Request.Path);
+
+        context.Response.Headers.Append("x-trace-id", currentSpan.Context.TraceId.ToString());
+
+        try
+        {
+            await context.Response.WriteAsync("Homepage + Did the change go through?");   
+        }
+        catch(Exception e)
+        {
+            currentSpan.SetAttribute("error", true);
+            currentSpan.SetAttribute("error.message", e.Message);
+            currentSpan.SetAttribute("error.stacktrace", e.StackTrace);
+
+            context.Response.StatusCode = 500;
+        }
+        finally
+        {
+            currentSpan.End();
+        }
     }
     private async Task HelloWorldDelegate(HttpContext context)
     {
-        await context.Response.WriteAsync("Hello World!");
+        TelemetrySpan currentSpan = _tracer.StartSpan("HelloWorldDelegate");
+        currentSpan.SetAttribute("http.method", context.Request.Method);
+        currentSpan.SetAttribute("http.url", context.Request.Path);
+
+        context.Response.Headers.Append("x-trace-id", currentSpan.Context.TraceId.ToString());
+
+        try
+        {
+            await context.Response.WriteAsync("Hello World!");   
+        }
+        catch(Exception e)
+        {
+            currentSpan.SetAttribute("error", true);
+            currentSpan.SetAttribute("error.message", e.Message);
+            currentSpan.SetAttribute("error.stacktrace", e.StackTrace);
+
+            context.Response.StatusCode = 500;
+        }
+        finally
+        {
+            currentSpan.End();
+        }
     }
 
     private async Task GoodbyeWorldDelegate(HttpContext context)
     {
-        await context.Response.WriteAsync("Goodbye World!");
+        TelemetrySpan currentSpan = _tracer.StartSpan("GoodbyeWorldDelegate");
+        currentSpan.SetAttribute("http.method", context.Request.Method);
+        currentSpan.SetAttribute("http.url", context.Request.Path);
+
+        context.Response.Headers.Append("x-trace-id", currentSpan.Context.TraceId.ToString());
+
+        try
+        {
+            int x = 0;
+            int y = 1/x;
+
+            await context.Response.WriteAsync("Goodbye World!");
+        }
+        catch(Exception e)
+        {
+            currentSpan.SetAttribute("error", true);
+            currentSpan.SetAttribute("error.message", e.Message);
+            currentSpan.SetAttribute("error.stacktrace", e.StackTrace);
+
+            context.Response.StatusCode = 500;
+        }
+        finally
+        {
+            currentSpan.End();
+        }
     }
 
     static void Main(String[] args)
